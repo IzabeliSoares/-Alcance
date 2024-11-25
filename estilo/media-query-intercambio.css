@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+
+*{
+  margin:0px;
+  padding:0px;
+ 
+
+
+}
+
+
+html{
+    width:100vw;
+    height:100vh;
+    box-sizing:border-box;
+}
+
+
+@media screen and (max-width:768px){
+
+  
+
+  .menu-cabeçalho{
+    display:flex;
+    position: fixed;
+    width:100%;
+    height:100%;
+    right:-100%;
+    top:0;
+    padding-top:2rem;
+    flex-direction:column;
+    background:#FBF8EF;
+    gap: -10px;
+    transition: 0.3s;
+    z-index:1;
+
+   }  
+    .navegação-item{
+      color:black;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      align-items:center;
+      padding:3rem;
+      font-size:30px;
+      text-decoration:none;
+
+    }
+
+    .navlist{
+      display:flex;
+      flex-direction:column;
+  }
+
+    
+    .menumobile{
+      display:block;
+      z-index:2;
+
+  }
+
+  .menu-cabeçalho.ativo {
+      right:0%;
+  }
+
+  .menumobile.ativo .bar:nth-child(1){
+      transform: translateY(-10px) rotate(45deg);
+  }
+
+  .menumobile.ativo{
+      position:fixed;
+      left:90%;
+  }
+
+      
+
+       .sessão1-intercambio{
+        padding: 3rem;
+       }
+
+       .sessão1-intercambio-texto{
+        font-size: 1.5rem;
+        padding-right:1rem;
+        padding-left:1rem;
+        padding-bottom:4rem;
+    }
+
+    .informações-intercambios{
+      text-align:left;
+      padding:0.5rem;
+    }
+
+    
+
+
+
+
+}

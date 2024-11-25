@@ -1,0 +1,761 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Nanum+Gothic:wght@400;700&family=Roboto+Slab:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html, body{
+ font-size:14px;
+ overflow-x:hidden;
+}
+
+
+body{
+    font-size:100%;
+    height:100vh;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.links{
+    color:#FBF8EF;
+    text-decoration: underline;
+}
+
+
+
+
+.Logomarca{
+    border-radius:50%;
+}
+
+
+.cabeçalho{
+
+    display:flex;  
+    flex-direction: row;
+    align-items:center;
+    gap:10px;
+    justify-content:space-between;
+    padding:30px;
+    background-color: #FBF8EF;
+}
+
+
+.nome-e-logo{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:1.5rem;
+    padding-left:0.2rem;
+ 
+
+
+}
+
+.menumobile{
+    display:none;
+}
+
+.bar{
+    display:block;
+    border-radius: 10px;
+    width:20px;
+    height:3px;
+    background-color:black;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+
+.cabeçalho-menu-barra{
+    display:none;
+}
+
+
+.menu-cabeçalho{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:center;
+    padding:0.8rem;
+    gap:80px;
+    background-color: #111b50;
+
+
+
+}
+.navegação-item{
+    gap: 7rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: small;
+    color:#FFFFFF;
+}
+
+.navegação{
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.navlist {
+    display:flex;
+    gap: 12px;
+}
+
+
+
+.container{
+    width:100vw;
+    position:relative;
+    color:#fff;
+}
+
+
+.container img{
+  width:100%;
+
+
+}
+
+.foto-site-menor{
+    display:none;
+}
+
+
+.texto-centro{
+  position:absolute;
+  height:40rem;
+  top:10%;
+  bottom:10%;
+  left:50%;
+  right:5%;
+  text-align:center;
+  background-color:rgba(0, 0, 0, 0.1);
+  padding:4rem;
+}
+
+
+.titulo{
+    font-size:70px;
+    margin-top:10%;
+    transition:all 0.5s;
+    
+}
+
+
+.texto-inicial-mais-alcance{
+
+    font-size: 1.2rem;
+    margin-top:5%;
+    margin-left:5%;
+    margin-right:5%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.sobre-nós-div{
+    margin-bottom:11rem;
+}
+
+.secao2-titulo{
+    padding-top:8rem;
+    font-size:50px;
+    color: #111b50;
+
+
+}
+
+
+.secao2-texto{
+margin-top: 2%;
+padding-bottom:3rem;
+text-align:center;
+font-family: 'Nanum Gothic', sans-serif;
+margin-left:20%;
+margin-right:20%;
+font-size:20px;
+
+
+}
+
+.secao3-index-titulo{
+    margin:10%;
+    font-size:2.7rem;
+    color: #111b50;
+    text-align:center;
+
+
+}
+
+
+.rodape{
+    text-align:center;
+    padding:5%
+
+}
+
+.extracurricular-container-sessao3{
+    width: 80rem;
+    height:635px;
+    background-color:#111b50;
+    margin-top: 7rem;
+    margin-left:14rem;
+    bottom:5rem;
+    position:relative;
+    
+    
+}
+
+.imagem-extracurrricular{
+    width:auto;
+    height:100%;
+}
+
+.conteúdo-right{
+
+    position:absolute;
+    top:0%;
+    left:50%;
+    bottom:0%;
+    background-color:#111b50;
+    text-align:center;
+    
+}
+
+
+.secao3-index-texto{
+    text-align:center;
+    color:#FBF8EF;
+    font-size:1.2rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-top: 2%;
+    padding-left:20%;
+    padding-right:20%;
+    
+}
+
+.sessão1-intercambio{
+
+    padding: 10rem;
+    padding-top:5;
+    color:#111b50;
+    background-color:#FBF8EF;
+   
+}
+
+.titulo-intercambio{
+    font-size: 4rem;
+    padding-bottom:1rem;
+}
+
+
+.sessão1-intercambio-texto{
+    font-size: 1.6rem;
+    padding-right:5rem;
+    padding-left:5rem;
+    padding-bottom:2rem;
+}
+
+.sessão2-intercambio{
+    background-color:#FBF8EF;
+    padding-right:4rem;
+    background-size:contain;
+    padding-top:3rem;
+   
+}
+
+
+.nome-intercambio{
+   font-size:2rem;
+}
+
+
+.descrição-intercambio{
+    font-size:1.4rem;
+    padding-bottom:3rem;
+   
+   
+}
+
+
+.informações-intercambios{
+    color:#111b50;
+    margin-left:10%;
+    background-color:#FBF8EF;
+}
+
+
+
+.sessão1-olimpiadas{
+    background-color:#FBF8EF;
+    background-position:100%;
+    color:#111b50;
+    text-align:center;
+    padding-top:10rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 3rem;
+
+}
+
+
+.título-olimpíadas{
+    font-size:3.8rem;
+    padding-bottom:2.6rem;
+    text-align:center;
+}
+
+.descrição-olimpiadas{
+    font-size:1rem;
+}
+
+.sessão2-olimpíadas{
+    background-color:#FBF8EF;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    padding:5rem;
+}
+
+.container-olimpíada{
+    width:60rem;
+    background-color:#111b50;
+    border-radius: 100px 100px 100px 100px;
+    margin:3rem;
+}
+
+
+.texto1-sessão2-olimpíadas{
+    color:#FBF8EF;
+    font-size:2rem;
+    text-align:center;
+    padding-left:2rem;
+    padding-right:3rem;
+    padding-bottom:3rem;
+    padding-top:3rem;
+
+
+}
+.descrição-olimpiadas{
+    font-size:25px;
+}
+
+
+.texto2-sessão2-olimpíadas{
+    color:#FBF8EF;
+    font-size: 1.8rem;
+    padding-right:2rem;
+    padding-bottom:3rem;
+    padding-top:3rem;
+    text-align:center;
+}
+
+
+.topo-olp{
+   background-color:#FBF8EF;
+   margin-top:0%;
+   
+}
+
+
+.topo-texto-olp1{
+    color:#111b50;
+    font-size: 5rem;
+    padding-left:20rem;
+    padding-top: 3rem;
+}
+
+
+.topo-texto-olp2{
+    color:#111b50;
+    font-size:2rem;
+    padding-left:20rem;
+    padding-top:3%;
+}
+
+
+.lista-olimpíadas{
+    background-color:#FBF8EF;
+    display:flex;
+    font-size: 1.5rem;
+    padding-left:20rem;
+    padding-top:2rem;
+
+
+}
+
+
+.seção2-olp{
+    margin-top:0%;
+    background-color:#FBF8EF;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    height:55rem;
+   
+}
+
+.aviso{
+    font-size:1.3rem;
+    padding-left:20rem;
+    color:#111b50;
+    padding-top:2%;
+    padding-right:10rem;
+}
+
+--COMPETIÇÕES
+
+.main-competições{
+    height:400rem;
+    background-color:#FBF8EF;
+}
+
+.competições-sessão-1{
+     background-color:#FBF8EF;
+     height:40rem;
+     width:100vw;
+     margin-top:0%;
+     padding-left:7rem;
+     padding-right:7rem;
+     padding-top:8.5rem;
+     text-align:center;
+     color:#111b50;
+}
+
+
+.título-principal-competições{
+    font-size:4rem;
+}
+
+.sessao1-competições-texto{
+    padding-top:2.5rem;
+    font-size:1.6rem;
+}
+
+
+.quebra-pag{
+    color:#111b50;
+    height:0.5rem;
+    background:#111b50;
+    
+}
+
+.quebra-pag-2{
+    color:#111b50;
+    height:0.2rem;
+    background:#111b50;
+    margin-top:0.3rem;
+}
+
+.competições-sessão-2{
+    width: 100vw;
+    text-align:center;
+    color:#111b50;
+    background-color:#FBF8EF;
+    
+}
+
+
+
+.caixa-texto-informações{
+   
+    padding-left:20rem;
+    padding-right:20rem;
+    font-size:1.3rem;
+    padding-top:4rem;
+}
+.descrição-competições{
+    font-size:1.5rem;
+    padding-bottom:2rem;
+}
+
+.link-competições {
+    color:#111b50;
+    text-decoration-line:underline;
+    
+  }
+
+
+
+.títulos-competições{
+
+
+    color:#111b50;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom:3rem;
+    text-align:center;
+    font-size:1.9rem;
+}
+
+
+.secao3-competiçao{
+
+
+    background-color: #FBF8EF;
+    height:20rem;
+    text-align:center;
+    padding-top: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    font-size: 1.5rem;
+}
+
+--PROJETOS
+
+.projetos-seção1{
+    width:100vw;
+    height:50rem;
+    background-color: #FBF8EF;
+}
+
+.projetos-div1{
+    height:42rem;
+    background-color: #FBF8EF;
+}
+
+
+.projetos-vantagens-container{
+    display:flex;
+    background-color:#111b50;
+}
+
+.projetos-title{
+    text-align:center;
+    font-size:3.8rem;
+    padding-top:12rem;
+    padding-bottom:4rem;
+    color:#111b50;
+}
+
+
+.insta-projeto-flex{
+    display:flex;
+}
+
+.logo-instagram{
+    padding-top:7.5rem;
+    width:100px;
+
+    
+}
+
+.projetos-descrição{
+    text-align:center;
+    font-size:1.8rem;
+    color:#111b50;
+    padding-left:10rem;
+    padding-right:10rem;
+}
+.container-projetos{
+    height:40rem;
+}
+
+.title-vantagens-projetos{
+    font-size:2.6rem;
+    padding-top:10rem;
+    padding-left:5rem;
+    color:#FBF8EF;
+}
+
+.descrição-vantagens{
+    font-size:1.6rem;
+    padding-top:2rem;
+    padding-left:5rem;
+    color:#FBF8EF;
+}
+
+.imagem-projetos{
+    width:500px;
+}
+
+.projetos-seção2{
+    background-color:#FBF8EF;
+    height:200rem;
+    padding-right:4rem;
+    overflow-y:hidden;
+}
+
+.titulo-lista-projetos{
+    color:#111b50;
+    text-align:center;
+    font-size:3.5rem;
+    padding-top:8rem;
+}
+
+
+.nome-projeto{
+   font-size:2rem;
+   padding-right:4rem;
+   padding-left:5rem;
+   padding-top:4rem;
+   color:#111b50;
+}
+
+
+.descrição-projeto{
+    font-size:1.4rem;
+    padding-bottom:3rem;
+    padding-right:4rem;
+    padding-left:5rem;
+    color:#111b50;
+   
+}
+
+
+.informações-projeto{
+    color:#111b50;
+    margin-left:10%;
+    background-color:#FBF8EF;
+    padding-right:4rem;
+    padding-left:5rem;
+}
+
+.veja-site2{
+    padding-right:4rem;
+    padding-left:5rem;
+    color:#111b50;
+    text-decoration:none;
+
+}
+
+.container_form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding-top:5%;
+    
+}
+
+.form{
+    background-color:pink;
+    width:45rem;
+    max-width:100vw;
+    height:41rem;
+    max-height:100vh;
+    border-radius:10px;
+    padding:4rem;
+    
+
+}
+
+.controleformulario{
+    margin-bottom:4rem;
+    padding-bottom:7px;
+    position:relative;
+}
+
+.controleformulario label {
+    display:inline-block;
+    margin-bottom:0.4rem;
+}
+
+.controleformulario input{
+    border: 2px solid #f0f0f0;
+    display:block;
+    border-radius:10px;
+    font-size:1rem;
+    width:100%;
+    padding:5px;
+}
+
+.controleformulario small {
+    position:absolute;
+    bottom:0;
+    left:0;
+    visibility:hidden;
+}
+
+.form button{
+    background-color: #fc00ff;
+    border: 2px solid #fc00ff;
+    color:white;
+    font-size:1rem;
+    width:100%;
+    border-radius:10px;
+    padding:10px;
+    cursor:pointer;
+}
+
+/* Error and Success*/
+
+.form-content.success input{
+   border-color:#2ecc71;
+}
+.form-content.error input{
+    border-color:#e74c3c;
+ }
+
+ .form-content.error a{
+    visibility: visible;
+    color:#e74c3c;
+ }
+
+ .body{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:5rem;
+ }
+
+ .container_form2{
+    background-color:pink;
+    max-width:45rem;
+    width:100%;
+    height:41rem;
+    max-height:100vh;
+    border-radius:10px;
+    
+ }
+ 
+ .header2{
+    text-align:center;
+    padding-top:2%;
+    
+ }
+
+ .form2{
+    padding:10rem;
+ }
+
+ .form-content{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
+ }
+
+ .form-content input{
+   width:100%;
+   border-radius:8px;
+   height:1.6rem;
+   padding:9px;
+   border: 2px solid  #dfdfdf;
+ }
+
+
+
+
+
+.footer{
+    width:100vw;
+    height:2rem;
+    background-color: #111b50;
+    text-align:center;
+    color:#FFFFFF;
+    padding-top:0.5rem;
+
+ 
+
+}

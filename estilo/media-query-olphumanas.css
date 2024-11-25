@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+
+*{
+    padding:0px;
+    margin:0px;
+}
+
+
+html,body{
+    width:100vw;
+    height:100vh;
+    background-size:contain;
+    box-sizing:border-box;
+    overflow-x:hidden !important;
+}
+
+
+@media screen and (max-width:768px){
+
+
+    .seção1-olphumanas{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .menu-cabeçalho{
+        position: fixed;
+        right:-100%;
+        width:100%;
+        height:100%;
+        top:0;
+        padding-top:2rem;
+        flex-direction:column;
+        background:#FBF8EF;
+        gap: -10px;
+        transition: 0.3s;
+        z-index:1;
+   
+       }
+       
+    .menu-cabeçalho.ativo {
+        right:0%;
+    }
+
+    .menumobile.ativo .bar:nth-child(1){
+        transform: translateY(-10px) rotate(45deg);
+    }
+
+    .menumobile.ativo{
+        position:fixed;
+        left:90%;
+    }
+     
+   .menumobile{
+    display:block;
+    z-index:2;
+    }
+
+    .cabeçalho-menu-barra{
+        display:block;
+        
+    }
+
+    .navegação-item{
+        margin: 16px 0;
+        color: black;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
+        padding:3rem;
+        font-size:30px;
+        text-decoration:none;
+    
+        }
+
+        .navlist{
+            display:flex;
+            flex-direction:column;
+        }
+
+
+
+    .topo-texto-olp1{
+        text-align:center;
+        font-size:4rem;
+        padding-left:0.7rem;
+        width:100%;
+        color:#111b50;
+    
+       
+    }
+
+    .aviso{
+        font-size:1rem;
+        padding-left:4rem;
+        color:#111b50;
+        padding-top:4%;
+        padding-bottom:4%;
+        padding-right:4rem;
+        text-align:center;
+    }
+
+
+    .topo-texto-olp2{
+        padding-left:5rem;
+        display:flex;
+        justify-content:flex-start;
+        align-items:center;
+        padding-right:4rem;
+       
+    }
+    .lista-olimpíadas{
+        padding-left:6rem;
+        font-size:1.4rem;
+        padding-right:3.5rem;
+    }
+}
