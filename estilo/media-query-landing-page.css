@@ -24,22 +24,20 @@ html,body{
     .menu-cabeçalho{
      right:100%;
      position: fixed;
-     width:100%;
-     height:100%;
+     width:100vw;
+     height:100vh;
      top:0;
-     padding-top:2rem;
-     flex-direction:column;
+     padding-left:4.5rem;
      background:#FBF8EF;
-     gap: -10px;
+     gap: -8px;
      transition: 0.3s;
      z-index:1;
 
     }
-
-    .menu-cabeçalho.active {
+    .menu-cabeçalho.active{
         right:0%;
-        display:block;
     }
+   
 
     .plano-de-fundo{
         display:none;
@@ -64,15 +62,15 @@ html,body{
 
 
     .navegação-item{
-        margin: 16px 0;
         color: black;
         display:flex;
         flex-direction:column;
-        justify-content:space-around;
+        justify-content:flex-start;
         align-items:center;
-        padding:3rem;
-        font-size:30px;
+        padding:2rem;
+        font-size:1.5rem;
         text-decoration:none;
+        overflow:auto;
     
         }
 
