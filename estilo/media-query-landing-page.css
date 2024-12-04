@@ -9,7 +9,7 @@
 
 html,body{
     width:100vw;
-    height:100vh;
+    height:210rem;
     box-sizing:border-box;
 }
 
@@ -18,12 +18,12 @@ html,body{
    
   .conteudo{
      background-color: #FBF8EF;
-     height:100vh;
     
    }
+
     .menu-cabeçalho{
+     right:100%;
      position: fixed;
-     right:-100%;
      width:100%;
      height:100%;
      top:0;
@@ -36,11 +36,16 @@ html,body{
 
     }
 
+    .menu-cabeçalho.active {
+        right:0%;
+        display:block;
+    }
+
     .plano-de-fundo{
         display:none;
         
     }
-    
+
 
     .menumobile{
         display:block;
@@ -48,19 +53,15 @@ html,body{
 
     }
 
-    .menu-cabeçalho.ativo {
-        right:0%;
-    }
-
-    .menumobile.ativo .bar:nth-child(1){
-        transform: translateY(-10px) rotate(45deg);
-    }
-
-    .menumobile.ativo{
+    .menumobile.active{
         position:fixed;
         left:90%;
     }
-    
+
+    .menumobile.active .bar:nth-child(1){
+        transform: translateY(-10px) rotate(45deg);
+    }
+
 
     .navegação-item{
         margin: 16px 0;
@@ -141,6 +142,10 @@ html,body{
     
 }
 
+.secao2-titulo{
+    font-size:2.5rem;
+}
+
 .extracurricular-container-sessao3{
 
     width:100vw;
@@ -167,10 +172,12 @@ html,body{
     left:0%;
     bottom:0%;
     margin:2rem;
+
 }
 
 .secao3-index-titulo{
     padding-top:8rem;
+    font-size:2.5rem;
 }
 
 .secao3-index-texto{
@@ -189,11 +196,11 @@ html,body{
 
 .footer{
     text-align:center;
-    padding:3rem;
-    background-color:#FBF8EF;
-    color:#111b50;
-    height:0.5rem;
-    z-index:2;
+    margin-top:32rem;
+    background-color:#111b50;
+    color:#FBF8EF;
+    height:2rem;
+    z-index:3;
 }
 
 

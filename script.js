@@ -1,5 +1,19 @@
-const menumobile = document.querySelector ('.menumobile');
-const MenuCabeçalho = document.querySelector ('.menu-cabeçalho');
+const menumobile = document.querySelector('.menumobile');
+
+
+function toggleMenu(){
+  const MenuCabeçalho = document.querySelector('.menu-cabeçalho');
+  MenuCabeçalho.classList.toggle('active');
+
+  const menumobile = document.querySelector('.menumobile');
+  menumobile.classList.toggle('active');
+
+}
+
+menumobile.addEventListener('click', toggleMenu)
+
+
+
 
 const form = document.getElementById("form")
 const username = document.getElementById("username")
@@ -23,10 +37,6 @@ function checkInputUserName(){
 
 }
 
-if (usernameInput.value === ""){
-  alert("Preencha");
-  return;
-}
 
 function errorInput (input, message ){
   const formItem = input.parentElement;
@@ -84,12 +94,7 @@ function errorInput (input, message ){
 
  }
 
-menumobile.addEventListener('click', () => {
-  menumobile.classList.toggle('ativo');
-  MenuCabeçalho.classList.toggle('ativo');
-  
 
-})
 
 const scrollReveal = ScrollReveal({
   origin: 'top',
