@@ -96,6 +96,10 @@ function errorInput (input, message ){
 
 
 
+
+
+ 
+
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '50px',

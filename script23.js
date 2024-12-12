@@ -20,12 +20,23 @@ username.addEventListener("blur", () => {
   checkInputUsername();
 })
 
+escola.addEventListener("blur", () => {
+  checkInputEscola();
+})
+
+estado.addEventListener("blur", () => {
+  checkInputEstado();
+})
+
+
+
+
 
 function checkInputUsername(){
   const usernameValue = username.value;
 
   if(usernameValue === ""){
-    errorInput(username, "Preencha um username!")
+    errorInput(username, "Preencha seu nome!")
   }else{
     const formItem = username.parentElement;
     formItem.className = "form-content"
@@ -37,7 +48,7 @@ function checkInputEmail(){
   const emailValue = email.value;
 
   if(emailValue === ""){
-    errorInput(email, "O email é obrigatório.")
+    errorInput(email, "O email é obrigatório!")
   }else{
     const formItem = email.parentElement;
     formItem.className = "form-content"
@@ -47,15 +58,26 @@ function checkInputEmail(){
 }
 
 
-function checkInputPassword(){
-  const passwordValue = password.value;
+function checkInputEscola(){
+  const EscolaValue = escola.value;
 
-  if(passwordValue === ""){
-    errorInput(password, "A senha é obrigatória.")
-  }else if(passwordValue.length < 8){
-    errorInput(password, "A senha precisa ter no mínimo 8 caracteres.")
+  if(EscolaValue === ""){
+    errorInput(escola, "A escola é obrigatória!")
   }else{
-    const formItem = password.parentElement;
+    const formItem = escola.parentElement;
+    formItem.className = "form-content"
+  }
+
+
+}
+
+function checkInputEstado(){
+  const EstadoValue = estado.value;
+
+  if(EstadoValue === ""){
+    errorInput(estado, "O estado é obrigatório!")
+  }else{
+    const formItem = estado.parentElement;
     formItem.className = "form-content"
   }
 
@@ -83,8 +105,8 @@ function checkInputPasswordConfirmation(){
 function checkForm(){
   checkInputUsername();
   checkInputEmail();
-  checkInputPassword();
-  checkInputPasswordConfirmation();
+  checkInputEscola();
+  checkInputEstado();
 
   const formItems = form.querySelectorAll(".form-content")
 

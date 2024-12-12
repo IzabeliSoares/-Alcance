@@ -13,6 +13,24 @@ html,body{
 }
 
 @media screen and (max-width:768px){
+      
+    .conteudo{
+        background-color: #FBF8EF;
+        height:175rem;
+      }
+
+    .menu-cabeçalho{
+        position:fixed;
+        right:100%;
+        top: 0;
+        width:100vw;
+        height:100vh;
+        padding-left:4.5rem;
+        background:#FBF8EF;
+        gap: -8px;
+        transition: 0.3s;
+        z-index:1;
+    } 
 
     .menumobile{
         display:block;
@@ -20,30 +38,29 @@ html,body{
 
     }
 
-    .menu-cabeçalho.ativo {
+    .menu-cabeçalho.active {
         right:0%;
     }
 
-    .menumobile.ativo .bar:nth-child(1){
+    .menumobile.active .bar:nth-child(1){
         transform: translateY(-10px) rotate(45deg);
     }
 
-    .menumobile.ativo{
+    .menumobile.active{
         position:fixed;
         left:90%;
     }
 
     .navegação-item{
-        margin: 16px 0;
-        color: black;
         display:flex;
         flex-direction:column;
-        justify-content:space-around;
+        justify-content:flex-start;
+        color: black;
         align-items:center;
-        padding:3rem;
-        font-size:30px;
+        padding:2rem;
+        font-size:1.5rem;
         text-decoration:none;
-    
+        overflow:auto;
         }
 
         .navlist{
@@ -53,11 +70,90 @@ html,body{
       
         .projetos-seção1{
             width:100vw;
-            height:50rem;
+            height:110rem;
             background-color: #FBF8EF;
             
         }
 
+        .projetos-title{
+            font-size:2.6rem;
+            padding-left:2rem;
+            padding-right:2rem;
+            padding-top:3rem;
+        }
+
+        .projetos-descrição{
+            font-size:1.6rem;
+            padding-left:1.5rem;
+            padding-right:1.5rem;
+        }
+
+        .projetos-vantagens-container{
+            display:flex;
+            flex-direction:column;
+            height:57rem;
+            background-color:#111b50;
+        }
+
+        .title-vantagens-projetos{
+            font-size:2.6rem;
+            padding-top:6rem;
+            padding-left: 1rem;
+            padding-right:1rem;
+            text-align:center;
+            color:#FBF8EF;
+        }
+
+        .descrição-vantagens{
+            font-size:1.6rem;
+            text-align:center;
+            padding-top:2rem;
+            padding-left:2rem;
+            padding-right:2rem;
+            color:#FBF8EF;
+        }
+
+        .imagem-projetos{
+            width:400px;
+            padding-left:4rem;
+        }
+
+        .projetos-seção2{
+            background-color:#FBF8EF;
+            height:450rem;
+            padding-right:4rem;
+            overflow-y:hidden;
+        }
+
+        .titulo-lista-projetos{
+            color:#111b50;
+            text-align:center;
+            font-size:3.5rem;
+            padding-top:0rem;
+            margin-top:0rem;
+        }
+
+        .insta-projeto-flex{
+            display:flex;
+            flex-direction:column;
+          
+        }
+
+        .logo-instagram{
+            padding-top:0rem;
+            padding-left:3rem;
+            width:150px;
+        }
+        
+
+        .descrição-projeto{
+            font-size:1.3rem;
+            padding-bottom:3rem;
+            padding-right:3rem;
+            padding-left:5rem;
+            color:#111b50;
+           
+        }
         
 
 
